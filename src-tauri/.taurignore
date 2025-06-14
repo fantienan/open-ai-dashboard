@@ -1,0 +1,4 @@
+resources/*
+workspace/*
+crates/*
+crates/web_server/*

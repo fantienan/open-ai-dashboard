@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - "@swc/core"
+  - "esbuild"
+  - "better-sqlite3"
+packages:
+  - "packages/common"
+  - "packages/ai-server"

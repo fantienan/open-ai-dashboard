@@ -1,0 +1,18 @@
+{
+  "main": "build/server.cjs",
+  "output": "sea-prep.blob",
+  "disableExperimentalSEAWarning": true,
+  "useSnapshot": false,
+  "useCodeCache": true,
+  "assets": {
+    "0000_cuddly_jack_power.sql": "C:\\workspace\\codes\\@ai\\open-ai-dashboard\\packages\\ai-server\\build\\migrations\\0000_cuddly_jack_power.sql",
+    "thread-stream-worker.cjs": "C:\\workspace\\codes\\@ai\\open-ai-dashboard\\packages\\ai-server\\build\\lib\\thread-stream-worker.cjs",
+    "pino-worker.cjs": "C:\\workspace\\codes\\@ai\\open-ai-dashboard\\packages\\ai-server\\build\\lib\\pino-worker.cjs",
+    "pino-roll.cjs": "C:\\workspace\\codes\\@ai\\open-ai-dashboard\\packages\\ai-server\\build\\lib\\pino-roll.cjs",
+    "pino-pretty.cjs": "C:\\workspace\\codes\\@ai\\open-ai-dashboard\\packages\\ai-server\\build\\lib\\pino-pretty.cjs",
+    "pino-file.cjs": "C:\\workspace\\codes\\@ai\\open-ai-dashboard\\packages\\ai-server\\build\\lib\\pino-file.cjs",
+    "better_sqlite3.node": "C:\\workspace\\codes\\@ai\\open-ai-dashboard\\packages\\ai-server\\build\\lib\\better_sqlite3.node",
+    "_journal.json": "C:\\workspace\\codes\\@ai\\open-ai-dashboard\\packages\\ai-server\\build\\migrations\\meta\\_journal.json",
+    "0000_snapshot.json": "C:\\workspace\\codes\\@ai\\open-ai-dashboard\\packages\\ai-server\\build\\migrations\\meta\\0000_snapshot.json"
+  }
+}

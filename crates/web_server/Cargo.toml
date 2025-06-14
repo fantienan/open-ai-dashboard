@@ -1,0 +1,51 @@
+[package]
+name = "web_server"
+version = "0.1.0"
+rust-version.workspace = true
+edition.workspace = true
+repository.workspace = true
+build = "build.rs"
+
+[lib]
+name="web_server"
+path = "src/lib.rs"
+
+[build-dependencies]
+common = { path = "../common" }
+
+[dependencies]
+axum = {workspace = true}
+tokio-util ={workspace = true}
+tokio = {workspace = true}
+serde = {workspace = true}
+serde_json = {workspace = true}
+common = { path = "../common" }
+log = {workspace = true}
+lettre = "0.11"
+
+# 日志相关
+tracing = {workspace = true}
+tracing-log = "0.2.0"
+
+tower-http = { version = "0.6.2", features = ["full"] }
+local-ip-address = "0.6.3"
+anyhow = {workspace = true}
+sea-orm = { workspace = true}
+web_server_entity = { path = "../web_server_entity" }
+web_server_migration = { path = "../web_server_migration" }
+thiserror={workspace = true}
+askama = "0.14.0"
+handlebars = "6.3.2"
+askama_web = "0.14.0"
+# 时间处理
+chrono = {workspace = true}
+
+jsonwebtoken = "9.3.1"
+validator = {workspace = true}
+once_cell = {workspace = true}
+
+mime = "0.3.17"
+
+
+[target.'cfg(windows)'.build-dependencies]
+tauri-winres = "0.3.1"

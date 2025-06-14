@@ -1,0 +1,60 @@
+[package]
+name = "ai-dashboard"
+version = "0.1.0"
+description = "一个基于 Tauri 的 AI 仪表盘应用"
+authors = ["fantienan"]
+edition.workspace = true
+rust-version.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "tauri_app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.2.0", features = [] }
+common = { path = "../crates/common" }
+
+[dependencies]
+common = { path = "../crates/common" }
+web_server = { path = "../crates/web_server" }
+
+tauri = { version = "2.5.0", features = [] }
+tauri-plugin-opener = "2"
+tauri-plugin-shell = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-log = "2"
+tauri-plugin-notification = "2"
+
+serde = {workspace = true}
+serde_json = {workspace = true}
+log = {workspace = true}
+once_cell = {workspace = true}
+shapefile = "0.7.0"
+thiserror = {workspace = true}
+futures = {workspace = true}
+tokio = {workspace = true}
+tokio-util = {workspace = true}
+num_cpus = "1.0"
+regex = {workspace = true}
+wkt = "0.14.0"
+geojson = "0.24"
+indicatif = "0.17.11"
+geo-types = "0.7.15"
+walkdir= {workspace = true}
+sqlx = {workspace = true}
+chrono = {workspace = true}
+anyhow = {workspace = true}
+nu-ansi-term = "0.50.1"
+atty = "0.2.14"
+# martin = "0.14.2"
+# gdal = "0.18.0"
+# libsqlite3-sys = { version = ">=0.27", features = ["bundled"] }
+# proj = "0.28.0"
+# actix-web = "4.9.0"
+# geo = "0.29.3"

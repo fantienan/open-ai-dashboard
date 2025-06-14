@@ -1,0 +1,42 @@
+[workspace]
+resolver = "3"
+members = [ 
+    "src-tauri", 
+    "crates/common",  
+    "crates/web_server", 
+    "crates/web_server_migration", 
+    "crates/web_server_entity"
+]
+
+[workspace.package]
+rust-version = "1.85.1"
+edition = "2024"
+repository = "https://github.com/fantienan/ai-dashboard"
+
+[workspace.dependencies]
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+sqlite-compressions = { version = "0.3.2", default-features = false, features = ["bsdiffraw", "gzip"] }
+sqlite-hashes = { version = "0.10.0", default-features = false, features = ["md5", "aggregate", "hex"] }
+sqlx = { version = "0.8.5", features = ["sqlite", "runtime-tokio"] }
+walkdir = "2.5.0"
+futures = "0.3.31"
+tokio = { version = "1.45.1", features = ["full"] }
+tokio-util = {version = "0.7.15", features = [ "full"]}
+anyhow = "1.0.98"
+dotenv-flow = "0.16.2"
+log = "0.4.27"
+sea-orm = {version = "1.1.12", features = ["sqlx-sqlite", "macros", "runtime-tokio-rustls"]}
+sea-orm-migration = {version = "1.1.12"}
+thiserror = "2.0.12"
+chrono = "0.4.41"
+uuid = "1.16.0"
+validator = { version = "0.20.0", features = ["derive"] }
+axum = "0.8.3"
+regex = {version = "1.11.1", features = ["std"] }
+once_cell = "1.21.3"
+path-absolutize = "3.1.1"
+
+tracing-subscriber = {version = "0.3.19", features = ["fmt", "env-filter", "json", "chrono"]}
+tracing = "0.1.41"
+tracing-appender = "0.2.3"

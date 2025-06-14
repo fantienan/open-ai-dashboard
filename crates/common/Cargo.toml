@@ -1,0 +1,32 @@
+[package]
+name = "common"
+version = "0.1.0"
+edition = "2024"
+[dependencies]
+walkdir={workspace = true}
+futures = {workspace = true}
+tokio = {workspace = true}
+tokio-util ={workspace = true}
+dotenv-flow = {workspace = true}
+log={workspace = true}
+archflow = "0.1.4"
+percent-encoding = "2.3.1"
+serde = {workspace = true}
+serde_json = {workspace = true}
+chrono = {workspace = true}
+thiserror={workspace = true}
+validator = {workspace = true}
+axum = {workspace = true}
+sea-orm = { workspace = true}
+ring = "0.17.14"
+rand = "0.9.1"
+rsa = "0.9.8"
+pem = "3.0.5"
+path-absolutize = {workspace = true}
+once_cell = {workspace = true}
+anyhow = {workspace = true}
+
+# 日志相关
+tracing-subscriber = {workspace = true}
+tracing = {workspace = true}
+tracing-appender = {workspace = true}
